@@ -6,6 +6,7 @@ on:
       python-version:
         description: 'The version of Python to set up'
         required: true
+        type: string
         default: '3.x'
 
 jobs:
