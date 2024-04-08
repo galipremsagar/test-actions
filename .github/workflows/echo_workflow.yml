@@ -23,7 +23,7 @@ jobs:
           python-version: ${{ inputs.python-version }}
       - name: Generate text file
         run: |
-          echo '{"context":"Pandas tests", "description":"90/100", "state":"success", "job_name": "${{ github.job }}"}' > gh-status.json
+          echo '{"context":"Pandas tests", "description":"90/100", "state":"success", "job_name1": "${{ github.job }}", "job_name": "call-reusable-workflow / echo_job"}' > gh-status.json
           echo "### Hello world1! :rocket:" >> $GITHUB_STEP_SUMMARY
       - name: Upload file to GitHub Artifact1
         uses: actions/upload-artifact@v4
